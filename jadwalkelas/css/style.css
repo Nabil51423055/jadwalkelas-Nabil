@@ -1,0 +1,145 @@
+/* style.css - modern minimalis dengan background lembut */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e8edf7; /* background halaman lembut biru keabu-abuan */
+    margin: 0;
+    padding: 20px;
+    color: #2c2c2c;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5c4d7d;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+    color: #7b5cf0;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #5a3eb0;
+    text-decoration: underline;
+}
+
+form {
+    max-width: 480px;
+    margin: 0 auto 35px auto;
+    background: #fdfcff; /* layer form putih lembut */
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6d0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form select:focus {
+    border-color: #7b5cf0;
+    box-shadow: 0 0 6px rgba(123,92,240,0.3);
+    outline: none;
+}
+
+/* Tombol utama: Tambah, Filter, Reset */
+.btn {
+    background: #7b5cf0;
+    border: none;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #5a3eb0;
+    transform: translateY(-1px);
+}
+
+/* Tombol edit */
+.btn-edit {
+    background: #22c55e;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-right: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-edit:hover {
+    background: #16a34a;
+    transform: translateY(-1px);
+}
+
+/* Tombol hapus */
+.btn-delete {
+    background: #ef4444;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-delete:hover {
+    background: #b91c1c;
+    transform: translateY(-1px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fdfcff; /* layer tabel putih lembut */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+table th {
+    background: #7b5cf0;
+    color: #ffffff;
+    padding: 14px;
+    text-align: left;
+    font-size: 15px;
+}
+
+table td {
+    border-bottom: 1px solid #e6e0f3;
+    padding: 14px;
+    font-size: 15px;
+}
+
+tr:hover {
+    background: #f4f1fd;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    font-size: 15px;
+}
